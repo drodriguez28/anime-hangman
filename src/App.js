@@ -5,12 +5,13 @@ import Header from './components/Header';
 import WrongLetters from './components/WrongLetters';
 import Word from './components/Word';
 import Popup from './components/Popup';
-import Notification from './components/Notification';
+//import Notification from './components/Notification';
+import PictureHints from './components/PictureHints';
 import { showNotification as show } from './helper/helpers';
 
 
 
-const words = ['eren', 'levi ', 'naruto', 'itachi', 'sasuke', 'deku', 'light', 'ryuk', 'mikasa', 'edward', 'meliodas', 'asta', 'yuno', 'lelouch', 'gon', 'killua', 'thorfinn', 'gojo', 'itadori' ];
+const words = ['eren', 'levi', 'naruto', 'itachi', 'sasuke', 'deku', 'light', 'ryuk', 'mikasa', 'edward', 'meliodas', 'asta', 'yuno', 'lelouch', 'gon', 'killua', 'thorfinn', 'gojo', 'itadori'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
@@ -72,13 +73,14 @@ function App() {
   return (
     <>
       <Header />
+      <PictureHints selectedWord={selectedWord} />
       <div className="game-container">
         <Figure wrongLetters={wrongLetters} />
         <WrongLetters wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
       <Popup selectedWord={selectedWord} wrongLetters={wrongLetters} correctLetters={correctLetters} setPlayable={setPlayable} playAgain={playAgain} />
-      <Notification showNotification={showNotification} />
+      {/* <Notification showNotification={showNotification} /> */}
     </>
 
   );
