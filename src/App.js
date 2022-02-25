@@ -8,6 +8,7 @@ import Popup from './components/Popup';
 //import Notification from './components/Notification';
 import PictureHints from './components/PictureHints';
 import { showNotification as show } from './helper/helpers';
+import ButtonLetters from './components/ButtonLetters';
 
 
 
@@ -78,6 +79,7 @@ function App() {
         <Figure wrongLetters={wrongLetters} />
         <WrongLetters wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
+        <ButtonLetters />
       </div>
       <Popup selectedWord={selectedWord} wrongLetters={wrongLetters} correctLetters={correctLetters} setPlayable={setPlayable} playAgain={playAgain} />
       {/* <Notification showNotification={showNotification} /> */}

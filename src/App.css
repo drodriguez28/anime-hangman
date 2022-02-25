@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(128,0,32);
+  background-color: rgb(128, 0, 32);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -17,14 +17,14 @@ body {
 h1 {
   margin: 20px 0 0;
   text-align: center;
-  color: rgb(245,245,220);
-  font-family: 'Courier New', Courier, monospace;
+  color: rgb(245, 245, 220);
+  font-family: "Courier New", Courier, monospace;
   font-size: 45px;
 }
 
 p {
   text-align: center;
-  color:rgb(245,245,220);
+  color: rgb(245, 245, 220);
 }
 
 .game-container {
@@ -144,4 +144,19 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.alphabet-letters-container {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.alphabet-letters {
+  background-color: gold;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
 }
