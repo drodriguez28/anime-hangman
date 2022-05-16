@@ -50,8 +50,6 @@ function App() {
         }
       }
     }
-
-
     window.addEventListener('keydown', handleKeydown);
 
     return () => window.removeEventListener('keydown', handleKeydown)
