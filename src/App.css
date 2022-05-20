@@ -49,7 +49,7 @@ p {
 .wrong-letters-container {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 100px;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -97,7 +97,7 @@ p {
 }
 
 .popup {
-  background: #2980b9;
+  background: #deb887;
   border-radius: 5px;
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -107,7 +107,7 @@ p {
 .popup button {
   cursor: pointer;
   background-color: #fff;
-  color: #2980b9;
+  color: black;
   border: 0;
   margin-top: 20px;
   padding: 12px 20px;
